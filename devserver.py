@@ -7,6 +7,10 @@ class SiteHandler(SimpleHTTPRequestHandler):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, directory=str(ROOT), **kwargs)
 
+    def end_headers(self):
+        self.send_header('Cache-Control', 'no-store')
+        super().end_headers()
+
     def send_head(self):
         path = self.translate_path(self.path)
         if not Path(path).exists() and not self.path.startswith('/assets/') and '.' not in Path(self.path).name:

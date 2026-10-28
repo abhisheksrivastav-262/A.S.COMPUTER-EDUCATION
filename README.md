@@ -17,8 +17,8 @@ The form validates required fields in the browser and prepares a `mailto:` draft
 ## Update content
 
 - Course list and descriptions: edit the `courses` array at the top of `app.js`.
-- Contact details and course list in rendered pages: update `index.html` and `app.js` consistently.
+- Contact details and course list in rendered pages: update `index.html` and `app.js` consistently. Current secondary phone: +91 9955421166.
 - Images: replace files in `assets/` while retaining filenames, or update references in `index.html` and `app.js`.
-- Header banner: `assets/header-banner.png` is used as the actual image in the header. No additional business-name text is rendered beside it.
+- Header banner: `assets/asce-logo.png` is used as the actual image in the header. No additional business-name text is rendered beside it.
 
 Course abbreviations and details remain as supplied; unconfirmed syllabi, duration, fees, eligibility, certifications and outcomes are not asserted.
